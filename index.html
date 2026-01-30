@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiran | Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1 id="mainTitle">Kiran Khamkar</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#profile">Profile</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p id="aboutText">
+            I am a final year Computer Engineering student.
+            I am learning the fundamentals of web development
+            and creating simple projects during my internship.
+        </p>
+        <button onclick="toggleAbout()">Show / Hide</button>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS (Beginner)</li>
+            <li>JavaScript (Basics)</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2>Profile</h2>
+
+        <img src="profile.jpg" alt="Profile Photo" width="150">
+
+        <div class="links">
+            <a href="https://github.com/Kirankhamkar017" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/kiran-khamkar-03859026a" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Information</h2>
+
+        <form onsubmit="validateForm(event)">
+            <label>Full Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+            <label>Email Address:</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+            <label>Message:</label><br>
+            <textarea id="message" rows="4" placeholder="Write your message"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="status"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 | Kiran Khamkar</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
